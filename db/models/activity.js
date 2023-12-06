@@ -47,7 +47,10 @@ module.exports = (sequelize, Sequelize) => {
     },
     {
       sequelize,
+      tableName: "activity",
       modelName: "Activity",
+      createdAt: 'created_at',
+      updatedAt:'updated_at'
     }
   );
   return Activity;

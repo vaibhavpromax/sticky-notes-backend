@@ -39,7 +39,10 @@ module.exports = (sequelize, Sequelize) => {
     },
     {
       sequelize,
+      tableName: "note",
       modelName: "Note",
+      createdAt: "created_at",
+      updatedAt: "updated_at",
     }
   );
   return Note;

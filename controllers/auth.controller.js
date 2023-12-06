@@ -58,13 +58,13 @@ const register = async (req, res) => {
                   //invite code is valid
                   await redisHelper.removeValue(inviteCode);
                   await Activity.create({
-                    activity_type: "joined_using_invite",
+                    action: "joined_using_invite",
                     user_id: parsedUser.user_id,
                     invite_code: inviteCode,
                   });
                 } else {
                   await Activity.create({
-                    activity_type: "joined",
+                    action: "joined",
                     user_id: parsedUser.user_id,
                   });
                 }

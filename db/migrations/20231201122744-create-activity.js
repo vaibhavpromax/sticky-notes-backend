@@ -40,6 +40,16 @@ module.exports = {
         defaultValue: "create",
         allowNull: false,
       },
+      created_at: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: new Date(),
+      },
+      updated_at: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: new Date(),
+      },
     });
   },
 
@@ -50,5 +60,6 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
+    await queryInterface.dropTable("activity");
   },
 };
