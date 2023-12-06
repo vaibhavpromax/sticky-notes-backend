@@ -54,4 +54,7 @@ Server should start running and listening at the PORT 8080
 ## DB Schema
 ![Schema Screenshot](https://drive.google.com/file/d/1429UkK01zEvvpWkS3irA53So4A8Wl3HB/view?usp=sharing)
 
+https://drive.google.com/file/d/1429UkK01zEvvpWkS3irA53So4A8Wl3HB/view?usp=sharing
+
+
 
