@@ -22,7 +22,11 @@ mysql --comments --host 127.0.0.1 --port 3307 -u root -p
 // inside the container use 
 create database sticky_notes;
 ```
+create a .env file in the root folder and insert 
 
+```bash
+REDIS_PORT=6379
+```
 after this we need to create tables and seed it with data:
 navigate inside backend folder and then:
 ```bash
